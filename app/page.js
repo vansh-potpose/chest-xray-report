@@ -2,29 +2,29 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ArrowRight, Brain, Settings as Lungs, Heart, FileCheck } from "lucide-react";
+import { ArrowRight, Brain, Settings as Lungs, FileCheck } from "lucide-react";
 import Link from "next/link";
 
 const features = [
   {
-    icon: Lungs,
-    title: "Pneumonia Detection",
-    description: "Advanced AI algorithms to detect signs of pneumonia with high accuracy"
+    icon: FileCheck,
+    title: "Automated Report Generation",
+    description: "Generates detailed radiology reports from chest X-ray images using a conditioned GPT-2 model."
   },
   {
-    icon: Heart,
-    title: "Cardiomegaly Analysis",
-    description: "Precise measurements to identify enlarged heart conditions"
+    icon: Lungs,
+    title: "Visual Feature Extraction",
+    description: "Utilizes pre-trained models like CheXNet to extract essential features from X-ray images."
   },
   {
     icon: Brain,
-    title: "AI-Powered Diagnosis",
-    description: "State-of-the-art machine learning for accurate diagnostic suggestions"
+    title: "Conditioned Text Generation",
+    description: "Integrates image semantics with GPT-2 to produce coherent and contextually accurate reports."
   },
   {
-    icon: FileCheck,
-    title: "Detailed Reports",
-    description: "Comprehensive reports with highlighted findings and recommendations"
+    icon: ArrowRight,
+    title: "Dataset-Driven Training",
+    description: "Leverages the IU-Xray dataset for training, ensuring relevance and accuracy in generated reports."
   }
 ];
 
@@ -67,7 +67,7 @@ export default function Home() {
           <motion.div
             animate={{
               y: [0, -10, 0],
-              opacity: [0.37, 0.5, 0.37]
+              opacity: [0.4, 0.6, 0.4]
             }}
             transition={{
               duration: 5,
